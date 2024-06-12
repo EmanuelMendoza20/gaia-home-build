@@ -1,5 +1,6 @@
 /* CSS RESET June 2024 */
 
+/* Estilos para PC */
 * {
     margin: 0;
     padding: 0;
@@ -78,6 +79,10 @@ header{
     justify-content: center;
 }
 
+.build-img-container{
+    text-align: center;
+}
+
 .text-container{
     text-align: center;
     display: flex;
@@ -91,6 +96,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding-top: 1rem;
 }
 
 .container-info h2{
@@ -112,7 +118,8 @@ header{
     font-weight: 400;
     line-height: 116.023%; /* 20.884px */
     letter-spacing: -0.54px;
-    width: 443px;
+    width: 100%;
+    max-width: 443px;
 }
 
 footer{
@@ -134,6 +141,7 @@ footer p{
     font-weight: 400;
     line-height: 116.023%; /* 20.884px */
     letter-spacing: -0.54px;
+    width: 100%;
 }
 
 .btn-contact{
@@ -154,3 +162,40 @@ footer p{
 .btn-contact:hover{
     background: #e1e1e1;
 }
+
+/* Tus estilos para PC */
+
+/* Estilos para PC */
+@media all and (min-width: 1024px) {
+
+}
+/* Tus estilos para PC */
+
+/* Estilos para tablet */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 2rem;
+  }
+  footer{
+    bottom: 0;
+  }
+  .build-img-container{
+    width: 70%;
+  }
+}
+/* Tus estilos para tablet */
+
+/* Estilos para celular */
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+  footer{
+    bottom: 0;
+  }
+  .build-img-container{
+    width: 70%;
+    text-align: center;
+  }
+}
+/* Tus estilos para celular */
