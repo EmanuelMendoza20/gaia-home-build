@@ -169,7 +169,10 @@ footer p{
 
 /* Estilos para PC */
 @media all and (min-width: 1024px) {
-
+  .container {
+    padding: 3rem;
+    margin-top: 4.5rem;
+  }
 }
 /* Tus estilos para PC */
 
@@ -191,14 +194,14 @@ footer p{
 /* Estilos para celular */
 @media all and (min-width: 320px) and (max-width: 768px) {
   .container {
-    padding: 2rem;
-    margin-top: 4rem;
+    padding: 4rem;
+    margin-top: 2.5rem;
   }
   footer{
     bottom: 0;
   }
   .build-img-container{
-    width: 70%;
+    width: 60%;
     text-align: center;
   }
 }
