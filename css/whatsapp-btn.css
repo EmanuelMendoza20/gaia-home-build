@@ -1,0 +1,221 @@
+.hidden {
+    display: none;
+  }
+  
+  .sticky-button {
+    position: fixed;
+    background-color: rgb(10 227 135);
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .sticky-button svg {
+    margin: auto;
+    fill: #fff;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .sticky-button a,
+  .sticky-button label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  .sticky-button label svg.close-icon {
+    display: none;
+  }
+  
+  .sticky-chat {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 320px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 21;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .sticky-chat a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: #777676;
+  }
+  
+  .sticky-chat svg {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .sticky-chat .chat-content {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px 0px;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+  
+  .sticky-chat .chat-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #eff1f3;
+    overflow: hidden;
+    border-bottom: solid 1px #ededed;
+  }
+  
+  /* .sticky-chat .chat-header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 70px 0 5px 0;
+  } */
+  
+  .sticky-chat .chat-header svg {
+    width: 35px;
+    height: 35px;
+    flex: 0 0 auto;
+    fill: #0ae387;
+  }
+  
+  .sticky-chat .chat-header .title {
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+  }
+  
+  .sticky-chat .chat-header .title span {
+    font-size: 11px;
+    font-weight: 400;
+    display: block;
+    line-height: 1.58em;
+    margin: 0;
+    color: #f4f4f4;
+  }
+  
+  .sticky-chat .chat-text {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 20px;
+    font-size: 12px;
+  }
+  
+  .sticky-chat .chat-text span {
+    display: inline-block;
+    margin-right: auto;
+    padding: 12px;
+    background-color: #eff1f3;
+    border-radius: 0px 15px 15px;
+    font-size: 16px;
+    color: #696868;
+    font-weight: 400;
+  }
+  
+  .sticky-chat .chat-text span:after {
+    content: "Ahora";
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 10px;
+    color: #989b9f;
+  }
+  
+  .sticky-chat .chat-text span.typing {
+    margin: 15px 0 0 auto;
+    padding: 10px;
+    border-radius: 15px 0px 15px 15px;
+  }
+  
+  .sticky-chat .chat-text span.typing:after {
+    display: none;
+  }
+  
+  .sticky-chat .chat-text span.typing svg {
+    height: 13px;
+    fill: #505050;
+  }
+  
+  .sticky-chat .chat-button {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 13px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px 0px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+  
+  .sticky-chat .chat-button svg {
+    width: 20px;
+    height: 20px;
+    fill: #a9b1b7;
+    margin-left: auto;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+  }
+  
+  .chat-menu:checked + .sticky-button label {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .chat-menu:checked + .sticky-button label svg.chat-icon {
+    display: none;
+  }
+  
+  .chat-menu:checked + .sticky-button label svg.close-icon {
+    display: table-cell;
+  }
+  
+  .chat-menu:checked + .sticky-button + .sticky-chat {
+    bottom: 90px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .title-header-wp{
+    margin-bottom: .3rem;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .title p{
+    color: #505050;
+    font-size: 16px;
+  }
+
+  #text-header-wp-id{
+    font-size: 12px;
+    font-weight: 700;
+  }
